@@ -9,8 +9,8 @@ from django.db.models import Q
 from django.http import JsonResponse
  
 class TransactionView(APIView):
-    def get(self, request):
-        query_string = request.GET.get('query', '')
+    def post(self, request):
+        query_string = request.data.get('query', '')
         if not query_string:
             return Response({"error": "Query string is required"}, status=400)
         elif query_string.strip().lower() == "hi":
