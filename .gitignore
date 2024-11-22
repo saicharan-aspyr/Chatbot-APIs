@@ -1,0 +1,73 @@
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+
+# Virtual environment directory
+venv/
+env/
+ENV/
+.Venv/
+
+# Django secret key and settings
+
+*.local
+
+# PostgreSQL-related files
+*.sql
+*.dump
+
+# IDE and editor files
+
+.vscode/
+
+
+# Logs and debug output
+*.log
+logs/
+*.out
+*.err
+
+# Media and static files
+media/
+staticfiles/
+
+# Unit test and coverage reports
+.coverage
+.tox/
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Deployment files
+*.pot
+*.mo
+
+# Compiled files
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Node.js (if used for frontend assets)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# pip and package management
+pip-log.txt
+pip-delete-this-directory.txt
+
+# PostgreSQL connection configuration files
+pg_hba.conf
+pg_ident.conf
+postgresql.auto.conf
+
+# OS-specific files
+.DS_Store
+Thumbs.db
