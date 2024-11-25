@@ -10,8 +10,7 @@ from .utils import (
 
 class TransactionView(APIView):
     def post(self, request):
-        # Retrieve query string from request body
-        query_string = request.data.get("query", "").lower()
+        query_string = request.data.get('query', '')
         if not query_string:
             return Response({"error": "Query string is required"}, status=400)
 
